@@ -80,6 +80,16 @@ body {
 #services  {
   background-color: #DEF2FF; /* Remplacez "#your-color" par la couleur de fond que vous souhaitez */
 }
+.card {
+  transform: perspective(1000px) rotateY(0deg);
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: perspective(1000px) rotateY(10deg);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
 
 
 /* references */
