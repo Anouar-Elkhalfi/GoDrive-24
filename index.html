@@ -241,6 +241,57 @@
     </div>
   </section>
 
+    <!-- reservation -->
+    <section id="Contact" class="py-5">
+
+      <div class="container">
+        <h2 class="text-center mb-5">Prendre Rendez-vous</h2>
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <form name ="submit-to-google-sheet">
+              <!-- <div class="mb-3">
+                <label for="fromLocation" class="form-label">From</label>
+                <input type="text" class="form-control" id="fromLocation" name="fromLocation" placeholder="Enter your location" required>
+              </div> -->
+              <!-- <div class="mb-3">
+                <label for="toLocation" class="form-label">To</label>
+                <input type="text" class="form-control" id="toLocation" name="toLocation" placeholder="Enter destination" required>
+              </div> -->
+              <div class="mb-3">
+                <label for="date" class="form-label">Date</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+              </div>
+              <div class="mb-3">
+                <label for="time" class="form-label">Time</label>
+                <input type="time" class="form-control" id="time" name="time" required>
+              </div>
+                <div class="mb-3">
+                  <label for="fullName" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="fullName" name="fullName" placeholder="First Name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="phoneNumber" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="request" class="form-label">Message</label>
+                  <input type="text" class="form-control" id="request" name="request" placeholder="Votre demande" required>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+              <span id = "msg" style="color: green; display: none;">votre message a été envoyé avec succès, je vous contacte au plus vite &#x1F600 </span>
+          </div>
+        </div>
+      </div>
+  </section>
+    <!--fin reservation -->
+
+
   <!-- Avis clients -->
   <div class="container-fluid testimonials-section">
     <div class="row">
@@ -318,6 +369,25 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src = "script.js"></script>
+  <script>
+    // Définir la date minimale pour un input de type date
+    document.getElementById("date").min = new Date().toISOString().split("T")[0];
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwBhWe7975ua2BeGY0h5S-HHha0Fj8HKU_fbA2bwbrkDI6AKIWwb2018eX5oAU96Hbdkw/exec';
+    const form = document.forms['submit-to-google-sheet'];
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message));
+
+      // Réinitialise le formulaire et affiche le message de confirmation
+      form.reset();
+      document.getElementById("msg").style.display = "block";
+      setTimeout(() => document.getElementById("msg").style.display = "none", 5000);
+    });
+  </script>
+
 </body>
 </html>

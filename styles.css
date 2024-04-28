@@ -158,3 +158,12 @@ body {
 .footer .fa-heart {
   color: #D23333;
 }
+
+
+/* reservation */
+#Contact {
+  background-color: #DEF2FF; /* Remplacez "#your-color" par la couleur de fond que vous souhaitez */
+}
+#msg {
+  display: none; /* Cache le message par défaut */
+}
