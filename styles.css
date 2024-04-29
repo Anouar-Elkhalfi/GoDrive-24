@@ -137,9 +137,10 @@ body {
 }
 
 .image {
-  width: 50%; /* Réglez la largeur de l'image */
+  width: 200%; /* Réglez la largeur de l'image */
   height: 200px; /* Réglez la hauteur de l'image */
   background-size: cover;
+  background-position: center;
 }
 
 .text {
@@ -197,6 +198,11 @@ body {
 }
 #msg {
   display: none; /* Cache le message par défaut */
+}
+/* contactus */
+#contactus {
+  background-color: black;
+  color: white; /* Change la couleur du texte en blanc pour une meilleure lisibilité */
 }
 
 /* here the footer css */
