@@ -112,18 +112,39 @@ body {
 
 
 /* references client */
-.background-section {
+/* .background-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(image/effel-tower.jpg); /* Remplacez "image/background.jpg" par le chemin de votre image de fond */
-  background-size: cover;
+  /* background-size: cover;
   background-position: center;
-  padding-top: 100px; /* Ajustez cette valeur en fonction de la hauteur de votre bannière */
-  padding-bottom: 100px; /* Ajustez cette valeur en fonction de la hauteur de votre bannière */
+  padding-top: 100px;
+  padding-bottom: 100px;
 
-}
+} */
 .white-text {
   color: white;
 }
+/* Nouvelle classe pour la section de cartes */
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajustez la largeur minimale et maximale selon vos besoins */
+  grid-gap: 16px;
+}
 
+/* Styles pour chaque carte */
+.card-category {
+  /* Ajoutez ici vos styles pour les cartes */
+  height: 200px; /* Ajustez la hauteur selon vos besoins */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 8px;
+}
+
+/* fin de rreferences client */
 
 
 /* avis client  */
@@ -158,6 +179,13 @@ body {
   font-size: 24px;
 }
 
+/* reservation */
+#Contact {
+  background-color: #337357; /* Remplacez "#your-color" par la couleur de fond que vous souhaitez */
+}
+#msg {
+  display: none; /* Cache le message par défaut */
+}
 
 /* here the footer css */
 .footer {
@@ -189,13 +217,4 @@ body {
 
 .footer .fa-heart {
   color: #D23333;
-}
-
-
-/* reservation */
-#Contact {
-  background-color: #337357; /* Remplacez "#your-color" par la couleur de fond que vous souhaitez */
-}
-#msg {
-  display: none; /* Cache le message par défaut */
 }
