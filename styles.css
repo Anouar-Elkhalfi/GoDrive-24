@@ -32,13 +32,13 @@
 }
 
 body {
-  background-color: #F5F7F8; /* Remplacez cette couleur par celle de votre choix */
+  background-color: #337357; /* Remplacez cette couleur par celle de votre choix */
 }
 
 
 /* about-secction */
 .about-section {
-  background-color: #F5F7F8; /* Remplacez cette couleur par celle de votre choix */
+  background-color: #337357; /* Remplacez cette couleur par celle de votre choix */
   padding: 50px 0; /* Ajoutez un peu de marge intérieure pour plus d'espace */
 }
 
@@ -78,7 +78,7 @@ body {
 /* services */
 
 #services  {
-  background-color: #DEF2FF; /* Remplacez "#your-color" par la couleur de fond que vous souhaitez */
+  background-color: #337357; /* Remplacez "#your-color" par la couleur de fond que vous souhaitez */
 }
 .card {
   transform: perspective(1000px) rotateY(0deg);
@@ -96,7 +96,7 @@ body {
 
 /* avis client  */
 .testimonials-section {
-  background-color: #F5F7F8;
+  background-color: #FFFFEC;
   padding: 50px 0;
 }
 
@@ -135,14 +135,14 @@ body {
   justify-content: space-between;
   height: 100px;
   padding: 0px 50px;
-  color: #DEF2FF(0,0,0,0.3);
+  color: #337357(0,0,0,0.3);
 }
 .footer-links {
   display: flex;
   align-items: center;
 }
 .footer-links a {
-  color: #DEF2FF;
+  color: #337357;
   opacity: 0.15;
   text-decoration: none;
   font-size: 24px;
@@ -152,7 +152,7 @@ body {
   opacity: 1;
 }
 .footer-copyright{
-  color: #DEF2FF;
+  color: #337357;
 }
 
 .footer .fa-heart {
@@ -162,7 +162,7 @@ body {
 
 /* reservation */
 #Contact {
-  background-color: #DEF2FF; /* Remplacez "#your-color" par la couleur de fond que vous souhaitez */
+  background-color: #337357; /* Remplacez "#your-color" par la couleur de fond que vous souhaitez */
 }
 #msg {
   display: none; /* Cache le message par défaut */
