@@ -80,6 +80,11 @@ body {
 #services  {
   background-color: #337357; /* Remplacez "#your-color" par la couleur de fond que vous souhaitez */
 }
+
+#services h2.text-white {
+  color: white;
+}
+
 .card {
   transform: perspective(1000px) rotateY(0deg);
   transition: transform 0.5s;
@@ -92,7 +97,21 @@ body {
 
 
 
-/* references */
+
+/* references client */
+.background-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(image/effel-tower.jpg); /* Remplacez "image/background.jpg" par le chemin de votre image de fond */
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px; /* Ajustez cette valeur en fonction de la hauteur de votre bannière */
+  padding-bottom: 100px; /* Ajustez cette valeur en fonction de la hauteur de votre bannière */
+
+}
+.white-text {
+  color: white;
+}
+
+
 
 /* avis client  */
 .testimonials-section {
