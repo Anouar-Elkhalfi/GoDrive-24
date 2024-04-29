@@ -45,13 +45,13 @@
   color: white;
 }
 body {
-  background-color: #337357; /* Remplacez cette couleur par celle de votre choix */
+  background-color: #FFF455; /* Remplacez cette couleur par celle de votre choix */
 }
 
 
 /* about-secction */
 .about-section {
-  background-color: #337357; /* Remplacez cette couleur par celle de votre choix */
+  background-color: #FFF455; /* Remplacez cette couleur par celle de votre choix */
   padding: 50px 0; /* Ajoutez un peu de marge intérieure pour plus d'espace */
 }
 
@@ -84,14 +84,10 @@ body {
   color: #007bff; /* Couleur au survol */
 }
 
-
-
-
-
 /* services */
 
 #services  {
-  background-color: #337357; /* Remplacez "#your-color" par la couleur de fond que vous souhaitez */
+  background-color: #FFF455; /* Remplacez "#your-color" par la couleur de fond que vous souhaitez */
 }
 
 #services h2.text-white {
@@ -125,24 +121,40 @@ body {
 }
 /* Nouvelle classe pour la section de cartes */
 .card-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajustez la largeur minimale et maximale selon vos besoins */
-  grid-gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FFFFEC;
 }
 
-/* Styles pour chaque carte */
 .card-category {
-  /* Ajoutez ici vos styles pour les cartes */
-  height: 200px; /* Ajustez la hauteur selon vos besoins */
-  background-size: cover;
-  background-position: center;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
+  flex: 0 0 calc(33.33% - 20px); /* Réglez la largeur de chaque carte selon vos besoins */
+  margin: 10px;
+  overflow: hidden;
   border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: black;
+  color: aliceblue;
 }
+
+.image {
+  width: 50%; /* Réglez la largeur de l'image */
+  height: 200px; /* Réglez la hauteur de l'image */
+  background-size: cover;
+}
+
+.text {
+  width: 50%; /* Réglez la largeur du texte */
+  padding: 20px;
+}
+
+.text h3 {
+  margin-top: 0;
+}
+
+.text p {
+  margin-bottom: 0;
+}
+
 
 /* fin de rreferences client */
 
@@ -181,7 +193,7 @@ body {
 
 /* reservation */
 #Contact {
-  background-color: #337357; /* Remplacez "#your-color" par la couleur de fond que vous souhaitez */
+  background-color: #FFF455; /* Remplacez "#your-color" par la couleur de fond que vous souhaitez */
 }
 #msg {
   display: none; /* Cache le message par défaut */
@@ -195,14 +207,14 @@ body {
   justify-content: space-between;
   height: 100px;
   padding: 0px 50px;
-  color: #337357(0,0,0,0.3);
+  color: #FFF455(0,0,0,0.3);
 }
 .footer-links {
   display: flex;
   align-items: center;
 }
 .footer-links a {
-  color: #337357;
+  color: #FFF455;
   opacity: 0.15;
   text-decoration: none;
   font-size: 24px;
@@ -212,7 +224,7 @@ body {
   opacity: 1;
 }
 .footer-copyright{
-  color: #337357;
+  color: #FFF455;
 }
 
 .footer .fa-heart {
