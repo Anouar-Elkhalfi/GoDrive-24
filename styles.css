@@ -3,7 +3,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1500; /* Augmentez la valeur du z-index */
+  z-index: 1500;
+  background-color: black;/* Augmentez la valeur du z-index */
 }
 
 /* banner css */
@@ -219,7 +220,7 @@ body {
 
 /* here the footer css */
 .footer {
-  background: #212529;
+  background: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
