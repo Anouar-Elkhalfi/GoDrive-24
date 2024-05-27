@@ -31,6 +31,42 @@
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
+.button-container {
+  display: flex; /* Utilise Flexbox pour aligner les enfants horizontalement */
+  align-items: center; /* Centre les boutons verticalement */
+  /* justify-content: space-between; */
+  /* Espacement entre les boutons, ajustez selon les besoins */
+}
+.btn-primary {
+  background-color: #007BFF; /* Couleur bleue pour le bouton 'Demandez votre devis' */
+  color: white;
+  border: none;
+  padding: 12px 24px; /* Ajustez selon vos préférences */
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px; /* Bord arrondi légèrement pour un look moderne */
+  cursor: pointer;
+  margin-right: 10px; /* Espace entre les boutons */
+}
+
+.tel {
+  background-color: #4CAF50; /* Couleur verte */
+  color: white;
+  padding: 15px;
+  border-radius: 50%; /* Cercle parfait */
+  font-size: 16px;
+  display: inline-flex; /* Utilisez flex ici pour centrer l'icône à l'intérieur du bouton */
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover, .tel:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 .btn-gradient {
   color: white;
   padding: 8px 24px;
@@ -46,8 +82,11 @@
   color: white;
 }
 body {
-  background-color: #FFF455; /* Remplacez cette couleur par celle de votre choix */
+  background-color: #FFF455;
+  /* Remplacez cette couleur par celle de votre choix */
 }
+/*BUTTON DE TELphone*/
+
 
 
 /* about-secction */

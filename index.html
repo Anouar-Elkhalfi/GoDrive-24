@@ -2,16 +2,15 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Réservez votre chauffeur VTC ou taxi en Île-de-France pour un trajet confortable et sécurisé. Découvrez nos services de qualité pour vos transferts aéroport, déplacements d'affaires, mariages et tourisme à Paris avec des tarifs compétitifs.">
-  <meta name="keywords" content="VTC Île-de-France, Taxi Île-de-France, Chauffeur privé Paris, Service de taxi, Réservation VTC, VTC Créil Paris, VTC compiègne, Transfert aéroport Paris, Chauffeurs professionnels Paris, Navette aéroport Île-de-France, Taxi gare Paris, Meilleur service de VTC Paris, Chauffeur pour mariage Paris, Taxi fiable Île-de-France, Transport premium Paris, Chauffeur de luxe Paris, Taxi pour tourisme Paris, Chauffeur d'affaires Paris, Transport événementiel Paris, Service de taxi pour événements, Chauffeur pour excursions Paris, Taxi électrique Paris, VTC écologique Île-de-France, Voiture de luxe avec chauffeur Paris, Taxi grande capacité Paris, Transport adapté handicap Paris">
-
+  <meta name="keywords" content="VTC Île-de-France, Taxi Île-de-France, Chauffeur privé Paris">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chauffeur VTC et Taxi en Île-de-France | GoDriver-24</title>
   <link rel="icon" href="image/logo-3.PNG" type="image/png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://www.godrive-24.com/la-page-principale" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -29,7 +28,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#services">Services</a>
@@ -38,7 +37,7 @@
             <a class="nav-link" href="#Contact">Reserver</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#Contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -50,7 +49,10 @@
         <h1>Anticiper chaque déplacement</h1>
         <h1>Réservez votre trajet avec GoDriver-24</h1>
         <p>savourer des prix imbattables et s'envoler vers l'expérience ultime de la sérénité !</p>
-        <a class="btn btn-gradient" href="#Contact">Demandez votre devis</a>
+        <div class="button-container">
+          <a class="btn btn-primary" href="#devis">Demandez votre devis</a>
+          <a class="tel" href="tel:0646846350"><i class="fas fa-phone"></i></a>
+      </div>
     </div>
 </div>
 
@@ -150,7 +152,7 @@
 
   <div class="vehicle-container">
     <div class="vehicle">
-        <img src="image/toyota-classe.PNG" alt="Berline avec chauffeur">
+        <img src="image/toyota-classe.PNG" alt="chauffeur vtc compiègne">
         <h2>Berline avec chauffeur</h2>
         <p>Camry Dynamic Business ou équivalent</p>
         <ul>
@@ -163,7 +165,7 @@
         <a class="btn btn-gradient" href="#Contact">Réserver une Berline</a>
     </div>
     <div class="vehicle">
-        <img src="image/class-v.PNG" alt="Van avec chauffeur">
+        <img src="image/class-v.PNG" alt="Van avec chauffeur-vtc">
         <h2>Van avec chauffeur</h2>
         <p>Mercedes Classe V ou équivalent</p>
         <ul>
@@ -222,11 +224,11 @@
           <div class="col-md-6 mx-auto">
             <form name ="submit-to-google-sheet">
               <div class="mb-3">
-                <label for="fromLocation" class="form-label">From</label>
+                <label for="fromLocation" class="form-label">Départ</label>
                 <input type="text" class="form-control" id="fromLocation" name="fromLocation" placeholder="Enter your location" required>
               </div>
               <div class="mb-3">
-                <label for="toLocation" class="form-label">To</label>
+                <label for="toLocation" class="form-label">Arrivée</label>
                 <input type="text" class="form-control" id="toLocation" name="toLocation" placeholder="Enter destination" required>
               </div>
               <div class="mb-3">
@@ -234,15 +236,15 @@
                 <input type="date" class="form-control" id="date" name="date" required>
               </div>
               <div class="mb-3">
-                <label for="time" class="form-label">Time</label>
+                <label for="time" class="form-label">Heure</label>
                 <input type="time" class="form-control" id="time" name="time" required>
               </div>
                 <div class="mb-3">
-                  <label for="fullName" class="form-label">Full Name</label>
+                  <label for="fullName" class="form-label">Nom de famille</label>
                   <input type="text" class="form-control" id="fullName" name="fullName" placeholder="First Name" required>
                 </div>
                 <div class="mb-3">
-                  <label for="phoneNumber" class="form-label">Phone Number</label>
+                  <label for="phoneNumber" class="form-label">Numéro de téléphone</label>
                   <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
                 </div>
                 <!-- <div class="mb-3">
@@ -254,7 +256,7 @@
                   <input type="text" class="form-control" id="request" name="request" placeholder="Votre demande" required>
               </div>
 
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary">Envoyé</button>
             </form>
               <span id = "msg" style="color: green; display: none;">votre message a été envoyé avec succès, je vous contacte au plus vite &#x1F600 </span>
           </div>
