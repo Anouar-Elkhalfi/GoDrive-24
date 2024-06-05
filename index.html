@@ -252,8 +252,21 @@
                   <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                 </div> -->
                 <div class="mb-3">
+                  <label for="travelers" class="form-label">Nombre de voyageurs</label>
+                  <input type="number" class="form-control" id="travelers" name="travelers" placeholder="Nombre de voyageurs" min="1" max="14" required>
+                </div>
+
+                <div class="mb-3">
                   <label for="request" class="form-label">Message</label>
                   <input type="text" class="form-control" id="request" name="request" placeholder="Votre demande" required>
+              </div>
+              <div class="mb-3">
+                <label for="serviceType" class="form-label">Choix du service</label>
+                <select class="form-control" id="serviceType" name="serviceType" required>
+                  <option value="">-- Sélectionnez le type de service --</option>
+                  <option value="berline">Berline</option>
+                  <option value="van">Van</option>
+                </select>
               </div>
 
               <button type="submit" class="btn btn-primary">Envoyé</button>
