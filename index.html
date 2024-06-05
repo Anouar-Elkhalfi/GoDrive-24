@@ -217,65 +217,56 @@
 
     <!-- reservation -->
     <section id="Contact" class="py-5">
-
       <div class="container">
-        <h2 class="text-center mb-5">Reservez votre trajet</h2>
-        <div class="row">
-          <div class="col-md-6 mx-auto">
-            <form name ="submit-to-google-sheet">
-              <div class="mb-3">
-                <label for="fromLocation" class="form-label">Départ</label>
-                <input type="text" class="form-control" id="fromLocation" name="fromLocation" placeholder="Enter your location" required>
-              </div>
-              <div class="mb-3">
-                <label for="toLocation" class="form-label">Arrivée</label>
-                <input type="text" class="form-control" id="toLocation" name="toLocation" placeholder="Enter destination" required>
-              </div>
-              <div class="mb-3">
-                <label for="date" class="form-label">Date</label>
-                <input type="date" class="form-control" id="date" name="date" required>
-              </div>
-              <div class="mb-3">
-                <label for="time" class="form-label">Heure</label>
-                <input type="time" class="form-control" id="time" name="time" required>
-              </div>
-                <div class="mb-3">
-                  <label for="fullName" class="form-label">Nom de famille</label>
-                  <input type="text" class="form-control" id="fullName" name="fullName" placeholder="First Name" required>
+        <h2 class="text-center mb-5">Réservez votre trajet</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form name="submit-to-google-sheet" class="needs-validation" novalidate>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="fromLocation" class="form-label">Départ <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="fromLocation" name="fromLocation" placeholder="Enter your location" required>
                 </div>
-                <div class="mb-3">
-                  <label for="phoneNumber" class="form-label">Numéro de téléphone</label>
-                  <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+                <div class="col-md-6 mb-3">
+                  <label for="toLocation" class="form-label">Arrivée <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="toLocation" name="toLocation" placeholder="Enter destination" required>
                 </div>
-                <!-- <div class="mb-3">
-                  <label for="email" class="form-label">Email Address</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-                </div> -->
-                <div class="mb-3">
-                  <label for="travelers" class="form-label">Nombre de voyageurs</label>
-                  <input type="number" class="form-control" id="travelers" name="travelers" placeholder="Nombre de voyageurs" min="1" max="14" required>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="date" class="form-label">Date <span class="text-danger">*</span></label>
+                  <input type="date" class="form-control" id="date" name="date" required>
                 </div>
-
-                <div class="mb-3">
-                  <label for="request" class="form-label">Message</label>
-                  <input type="text" class="form-control" id="request" name="request" placeholder="Votre demande" required>
+                <div class="col-md-6 mb-3">
+                  <label for="time" class="form-label">Heure <span class="text-danger">*</span></label>
+                  <input type="time" class="form-control" id="time" name="time" required>
+                </div>
               </div>
               <div class="mb-3">
-                <label for="serviceType" class="form-label">Choix du service</label>
+                <label for="phoneNumber" class="form-label">Numéro de téléphone <span class="text-danger">*</span></label>
+                <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+              </div>
+              <div class="mb-3">
+                <label for="travelers" class="form-label">Nombre de voyageurs <span class="text-danger">*</span></label>
+                <input type="number" class="form-control" id="travelers" name="travelers" placeholder="Nombre de voyageurs" min="1" max="14" required>
+              </div>
+              <div class="mb-3">
+                <label for="serviceType" class="form-label">Choix du service <span class="text-danger">*</span></label>
                 <select class="form-control" id="serviceType" name="serviceType" required>
                   <option value="">-- Sélectionnez le type de service --</option>
                   <option value="berline">Berline</option>
                   <option value="van">Van</option>
                 </select>
               </div>
-
-              <button type="submit" class="btn btn-primary">Envoyé</button>
+              <p class="text-muted"><span class="text-danger">*</span> Indique un champ obligatoire à remplir pour bien traiter votre demande</p>
+              <button type="submit" class="btn btn-primary">Envoyer</button>
             </form>
-              <span id = "msg" style="color: green; display: none;">votre message a été envoyé avec succès, je vous contacte au plus vite &#x1F600 </span>
+            <span id="msg" style="color: green; display: none;">Votre message a été envoyé avec succès, je vous contacte au plus vite &#x1F600;</span>
           </div>
         </div>
       </div>
-  </section>
+    </section>
+
     <!--fin reservation -->
 
     <!-- Avis clients -->
